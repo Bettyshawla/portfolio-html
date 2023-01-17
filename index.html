@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="./script.js" ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="headerdiv" class="headerdiv">
+      <div class="header">
+        <nav class="navbar">
+          <img src="./image/Bts.png" class="logo" alt="personal-logo" />
+          <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> About Me </a></li>
+            <li><a href="#"> Project </a></li>
+            <li><a href="#"> Contact me </a></li>
+          </ul>
+        </nav>
+        <div class="header-pic-des">
+          <div class="header-description">
+            <h1>
+              Hi, its <span>Bethelhem Shawla</span> <br />
+              A Full Stack Developer
+            </h1>
+            <h3>based in <span>Maryland, USA</span></h3>
+          </div>
+          <div class="header-img">
+            <img src="./image/portfolio pic.png" alt="" class="por-img" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="body-about">
+      <div class="about">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./image/Screen Shot 2023-01-16 at 8.22.27 PM.png" alt="about me pic" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              adipisci dignissimos perspiciatis quasi necessitatibus minima
+              accusantium, fugit ea provident ipsa. Delectus molestiae
+              voluptatem dolorum! Eos numquam fuga obcaecati voluptatem
+              repudiandae. fugit ea provident ipsa. Delectus molestiae
+              voluptatem dolorum! Eos numquam fuga obcaecati voluptatem
+              repudiandae.
+            </p>
+
+            <div class="tab">
+              <p class="tab-links active-link" onclick="open('technicalSkills')">Technical Skills</p>
+              <p class="tab-links" onclick="open('personalSkills')">Personal Skill</p>
+              <p class="tab-links" onclick="open('experience')">Experience</p>
+              <p class="tab-links" onclick="open('education')">Education</p>
+            </div>
+
+          
+              <!-- Technical Skills -->
+              <div class="tab-content active-tab" id="technicalSkills">
+                <ul>
+                  <li>
+                    <span>Frontend Development</span> <br />
+                    <b>HTML5</b>
+                    <p>Structuring contents and Canvas</p>
+
+                    <br />
+                    <b>CSS3</b>
+                    <p>CSS Frameworks, Transition, and Animations</p>
+
+                    <br />
+                    <b>Java Script</b>
+                    <p>
+                      Object Oriented Programming, Event handling, DOM
+                      manipulation, Libraries, and Frameworks
+                    </p>
+                  </li>
+
+                  <li>
+                    <span>Backend Development / MERN Stack</span> <br />
+                    <b> MongoDB</b>
+
+                    <p>CRUD(Create, Read, Update, Delete)</p>
+                    <br />
+
+                    <b>Express</b>
+                    <p>
+                      Routing, Middleware, Request, response, and error
+                      handling, and Database integration
+                    </p>
+
+                    <br />
+                    <b>React</b>
+                    <p>
+                      Event and form handling, Server side rendering, Routing,
+                      Props and State, and Deploying
+                    </p>
+
+                    <br />
+                    <b>Node</b>
+                    <p>Structuring contents and Canvas</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content active-tab" id="personalSkills">
+                <!-- Personal Skill -->
+                <ul>
+                  <li>
+                    <b class="per-skill">Strong problem-solving skill</b>
+                    <b class="per-skill">Optimistic</b>
+                    <b class="per-skill">Strong work ethics</b>
+                    <b class="per-skill">Good communication/ team work skill</b>
+                  </li>
+                </ul>
+              </div>
+              <!--  Experience  -->
+              <div class="tab-content active-tab" id="experience">
+                <ul>
+                  <li>
+                    <span>Internship Experience </span>
+                    <br /><br />
+                    <b>MESHU Lab</b>
+                    <br />
+                    <p>2022 - Current</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- EDUCATION -->
+              <div class="tab-content active-tab" id="education">
+                <ul>
+                  <li>
+                    <span>Education</span>
+                    <br />
+                    <b>Per Scholas</b>
+                    <p>Software Engineering</p>
+                    <p>Sep 2022 - Jan 2023</p>
+
+                    <br />
+                    <b>University of California, Davis</b>
+                    <p>Web Development</p>
+                    <p>June 2022 - Aug 2022</p>
+
+                    <br />
+                    <b>Saint Mary Univeristy</b>
+                    <p>Business Management</p>
+                    <p>2014 - 2017</p>
+
+                    <br />
+                    <b>Montgomery College</b>
+                    <p>Nursing</p>
+                    <p>2018-2024</p>
+                  </li>
+                </ul>
+              </div>
+       
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
