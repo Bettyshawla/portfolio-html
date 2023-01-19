@@ -128,6 +128,7 @@ margin-top: 20px;
 }
 .about-col-1{
     flex-basis: 40%;
+    padding-right: 3%;
 }
 
 .about-col-1 img{
@@ -259,7 +260,7 @@ button{
 .contact-right{
     display: flex;
     flex-wrap: wrap;
-    padding: 3% 3% 10px 3%;
+    padding: 3% 0% 10px 3%;
     
 }
 
