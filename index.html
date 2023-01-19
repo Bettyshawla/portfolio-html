@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <script src="./script.js" ></script>
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header id="headerdiv" class="headerdiv">
@@ -14,48 +26,67 @@
         <nav class="navbar">
           <img src="./image/Bts.png" class="logo" alt="personal-logo" />
           <ul>
-            <li><a href="#"> Home </a></li>
-            <li><a href="#"> About Me </a></li>
-            <li><a href="#"> Project </a></li>
-            <li><a href="#"> Resume </a></li>
-            <li><a href="#"> Contact me </a></li>
+            <li><a href="#home"> Home </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#project"> Project </a></li>
+            <li>
+              <a
+                class="nav-link"
+                href="./image/Bshawla-(DMV).pdf"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li><a href="#contact"> Contact me </a></li>
           </ul>
         </nav>
+
         <div class="header-pic-des">
           <div class="header-description">
-            <h1>
+            <h1 class="text">
               Hi, its <span>Bethelhem Shawla</span> <br />
-              A Full Stack Developer
+              A Junior Full Stack Developer
             </h1>
             <h3>based in <span>Maryland, USA</span></h3>
-          </div>
-          <div class="header-img">
-            <img src="./image/portfolio pic.png" alt="" class="por-img" />
           </div>
         </div>
       </div>
     </header>
 
-    <div id="body-about">
-      <div class="about">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="./image/la.png" alt="about me pic" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
-            <p>
-              I have a strong background in software engineering and have recently completed a certificate program in the field. I have also gained experience in the tech industry, specifically working with JavaScript, MERN Stack, and React.js as a full-stack developer. I have confidence in my technical skills, combined with my strong work ethic and desire to constantly learn and improve, make you a strong candidate for a software engineering role.
-            </p>
-
-            <div class="tab">
-              <p class="tab-links active-link" onclick="open('technicalSkills')">Technical Skills</p>
-              <p class="tab-links" onclick="open('personalSkills')">Personal Skill</p>
-              <p class="tab-links" onclick="open('experience')">Experience</p>
-              <p class="tab-links" onclick="open('education')">Education</p>
+    <main class="main-div">
+      <div id="body-about">
+        <div id="about" class="about">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./image/portfolio pic.png" alt="about me pic" />
             </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About me</h1>
+              <p>
+                I have a strong background in software engineering and have
+                recently completed a certificate program in the field. I have
+                also gained experience in the tech industry, specifically
+                working with JavaScript, MERN Stack, and React.js as a
+                full-stack developer. I have confidence in my technical skills,
+                combined with my strong work ethic and desire to constantly
+                learn and improve, make you a strong candidate for a software
+                engineering role.
+              </p>
 
-          
+              <div class="tab">
+                <p
+                  class="tab-links active-link"
+                  onclick="open('technicalSkills')"
+                >
+                  Technical Skills
+                </p>
+                <p class="tab-links" onclick="open('personalSkills')">
+                  Personal Skill
+                </p>
+                <p class="tab-links" onclick="open('experience')">Experience</p>
+                <p class="tab-links">Education</p>
+              </div>
+
               <!-- Technical Skills -->
               <div class="tab-content active-tab" id="technicalSkills">
                 <ul>
@@ -98,7 +129,7 @@
 
                     <br />
                     <b>Node</b>
-                    <p>Structuring contents and Canvas</p>
+                    <p>strong database management knowledge</p>
                   </li>
                 </ul>
               </div>
@@ -106,7 +137,8 @@
                 <!-- Personal Skill -->
                 <ul>
                   <li>
-                    <span>communication Skill</span>
+                    <span>Communication Skill</span>
+                    <br />
                     <b class="per-skill">Strong problem-solving skill</b>
                     <br />
                     <b class="per-skill">Optimistic</b>
@@ -156,10 +188,115 @@
                   </li>
                 </ul>
               </div>
-       
+            </div>
           </div>
         </div>
       </div>
+
+      <div id="project">
+        <h1>Here are some of my Projects ...</h1>
+        <div class="portfolio">
+          <div class="card">
+            <a href="https://zenach-fashion-e-commerce-app.onrender.com">
+              <img src="./image/e-commerce.jpeg" alt="e-commerce" />
+            </a>
+            <div class="card-text">
+              <h3>E-commerce app</h3>
+              <li> E-commerce app developed using MERN stack</li>
+              <h4>Tools used</h4>
+              <li>Bootstrap</li>
+              <h4>Language used</h4>
+            <li>MongoDB, Express, Node.js, and React</li>
+            </div>
+          </div>
+          <div class="card">
+            <a href="https://zenach-fashion-e-commerce-app.onrender.com">
+              <img src="./image/t.jpeg" alt="e-commerce" />
+            </a>
+            <div class="card-text">
+              <h3>Tic-Tac-Toe</h3>
+              <li>E-commerce app developed using HTML5, CSS3, and Java Script</li>
+              <h4>Tools used</h4>
+              <li>N/A</li>
+              <h4>Language used</h4>
+              <li>HTML5, CSS3, and Java Script</li>
+            </div>
+          </div>
+          <div class="card">
+            <a href="https://zenach-fashion-e-commerce-app.onrender.com">
+              <img src="./image/emp-dir-banner.webp" alt="e-commerce" />
+            </a>
+            <div class="card-text">
+              <h3>Employee Directory</h3>
+              <li>Employee Directory app developed using React</li>
+              <h4>Tools used</h4>
+              <li>Bootstrap</li>
+              <h4>Language used</h4>
+              <li>React</li>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+
+      <section class="last-body">
+        <h1>Contact me</h1>
+        <div id="contact" class="contact-right">
+          <form class="input-mail">
+            <input
+              type="text"
+              name="Name"
+              placeholder="Add Your Name"
+              required
+            />
+            <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Add Your Email"
+              required
+            />
+            <br />
+            <textarea
+              name="Message"
+              id="msg"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <br />
+            <button type="submit">Send</button>
+          </form>
+          <div class="mail">
+            <img src="./image/gmail.jpeg" alt="gmail" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <div class="footer-div">
+      <div class="footer">
+        <p>&copy; Bethelhem Shawla Portfolio, 2023</p>
+ 
+      </div>
+      <div class="footer-icon">
+        <a href="https://www.linkedin.com/in/bethelhem-shawla-48b5b8143/">
+          <img src="./image/linkedin.png" alt="">
+        </a>
+        <a href="https://github.com/Bettyshawla">
+          <img src="./image/github.gif" alt="sdsd">
+        </a>
+
+        <a href="https://www.instagram.com/betty.tada/">
+          <img src="./image/ig.png" alt="">
+        </a>
+
+        <a href="https://www.facebook.com/zenachfashion7">
+          <img src="./image/facebook.png" alt="">
+        </a>
+      </div>
+
     </div>
   </body>
 </html>
