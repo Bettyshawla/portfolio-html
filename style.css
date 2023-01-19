@@ -5,13 +5,11 @@
   box-sizing: border-box;
 }
 
-
-
 body{
     background-color: black;
     color: white;
 }
-
+/* ________________HEADER PAGE______________ */
 
 #headerdiv{
     margin-top: auto;
@@ -20,7 +18,6 @@ body{
     background: url(./image/git-la.png);
     background-size: cover;
     background-position: center;
-  
 }
 
 .header{
@@ -33,7 +30,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding-bottom: 10px;
-    
 }
 
 nav ul li{
@@ -69,16 +65,11 @@ nav ul li a:hover::after{
     width: 100px;
 }
 
-.bg-image.text{
-    text-align: center;
-    justify-content: center;
-}
-
 .header-description{
     margin-top: 10%;
     font-size: 30px;
-
 }
+
 .header-description h1{
 font-size: 60px;
 margin-top: 20px;
@@ -122,10 +113,8 @@ margin-top: 20px;
     display: flex; 
     flex-wrap: wrap;
     padding-left: 5%;
-   
-
-
 }
+
 .about-col-1{
     flex-basis: 40%;
     padding-right: 3%;
@@ -136,11 +125,18 @@ margin-top: 20px;
     border-radius: 1rem;
     padding-right: 3%;
 }
+
 .about-col-2{
     flex-basis: 40%;
     padding-right: 5%;
 }
 
+.about-col-2 h1{
+    margin-bottom: 1rem;
+}
+.about-col-2 p{
+    font-size: large;
+}
 
 .sub-title{
     color: white;
@@ -159,37 +155,33 @@ margin-top: 20px;
     position: relative;
 }
 
- .tab-contents ul li{
+.tab-contents ul li{
     list-style: none;
     margin: 10px 0;
- }
+}
 
- .tab-contents ul li{
+.tab-contents ul li{
     color: #f87385;
     font-size: larger;
+}
 
- }
-
- .tab-contents ul li span{
+.tab-contents ul li span{
     font-size: xx-large;
     color: white;
-    
-
- }
+}
 
  .tab-contents ul li p{
- 
     font-size: large;
     color: rgb(244, 200, 200);
- }
+}
 
- .tab-contents{
+.tab-contents{
     display: none;
- }
+}
 
- .tab-contents.active-tab{
+.tab-contents.active-tab{
     display: block;
- }
+}
 
 .tab-links::after{
     content: '';
@@ -202,11 +194,11 @@ margin-top: 20px;
     transition: 0.3s;
 }
 
- .tab-links.active-link::after{
+.tab-links.active-link::after{
     width: 100%;
+}
 
- }
-
+/* ________________PORTFOLIO PAGE______________ */
 
 .portfolio{
     display: flex;
@@ -214,6 +206,7 @@ margin-top: 20px;
     justify-content: space-evenly;
     padding-bottom: 10%;
 }
+
 .card a img{
     width: 370px;
     height: 45vh;
@@ -223,102 +216,55 @@ margin-top: 20px;
     color: white;
     padding-left: 5%;
     font-size: 40px;
-}
-
-.last-body{
-    color: black;
-}
-
-
-.last-body h1{
-    color: white;
-    padding-left: 5%;
-    font-size: 40px;
-    padding-bottom: 2rem;
-
+    margin-bottom: 1rem;
 }
 
 .card-text h3{
     color: #f87385;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
 .card-text h4{
     color: #f79aa7;
-}
-
-input{
-    margin-bottom: 2rem;
-    width: 50%;
-    border:rgb(76, 15, 42)  solid;
-    background-color:rgb(245, 213, 190) ;
+    margin-bottom: 0.5rem;
 }
 
 
-textarea{
-    width: 50%;
-    border: saddlebrown solid;
-}
-
-
-.input-mail{
-    width: 70%;
-}
-button{
-    color: black;
-    border-color: #f87385;
-    width: 8rem;
-    cursor: pointer;
-}
-
-.contact-right{
+/* .contact-right{
     display: flex;
     flex-wrap: wrap;
     padding: 3% 0% 10px 3%;
-    
-}
-
-.mail img{
-    width: 200px;
-}
-
-.footer-div{
-background-color: rgb(23, 22, 22);
-display: grid;
-padding-top: 6%;
-padding-bottom: 6%;
-justify-content: center;
-}
+} */
 
 
-.footer{
-    align-items: center;
-    padding-bottom: 2rem;
 
-}
-.footer-icon{
-    justify-content: space-between;
-}
-
-
-/* __________________ */
+/* ________________CONTACT PAGE______________ */
 
 .container{
     width: 100%;
     background-color: #ffd9b9;
     color: black;
 }
+
 .contact-box{
     display: flex;
-
 }
+
+.contact-text{
+    background-color: #e7d5c7;
+    padding-top: 1.6rem;
+    padding-bottom: 3rem;
+    padding-left: 10%;
+}
+
 .contact-left{
     flex-basis: 60%;
     padding: 40px 60px;
     border-top: 2px solid rgb(179, 139, 139);
     border-right: 2px solid rgb(179, 139, 139);
-
 }
+
 .contact-right{
     flex-basis: 40%;
     padding: 40px;
@@ -332,6 +278,7 @@ justify-content: center;
     width: 100%;
     height: 70vh;
 }
+
 .input-row{
     display: flex;
     flex-wrap: wrap;
@@ -360,10 +307,12 @@ textarea{
     background-color: white;
     border: 1px solid #f87385;
 }
+
 label{
     margin-bottom: 10px;
     display: block;  
 }
+
 button{
     background-color: #f87385;
     color: aliceblue;
@@ -374,15 +323,27 @@ button{
     border-radius: 30px;
     margin-top: 20px;
     box-shadow: 0px 5px 10px 0 black;
+    cursor: pointer;
    
 }
 
-.contact-text{
-    background-color: #e7d5c7;
-    /* color: white; */
-    padding-top: 1.6rem;
-    padding-bottom: 3rem;
-    padding-left: 10%;
-   
-}
+/* ________________FOOTER PAGE______________ */
 
+.footer-div{
+    background-color: rgb(23, 22, 22);
+    display: grid;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    justify-content: center;
+    }
+    
+    
+    .footer{
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    
+    .footer-icon{
+        justify-content: space-between;
+    }
+    

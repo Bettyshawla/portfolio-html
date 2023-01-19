@@ -14,17 +14,21 @@ This is a portfolio website is built using HTML and CSS. It showcases my past pr
 # How to Use
 Clone or download the repository
 Open the index.html file in your browser to view the portfolio
-You can edit the information and projects displayed by editing the HTML and CSS files
+You can edit the information and projects displayed by editing the HTML, CSS, and Javascript files
 Make sure to update the contact information in the contact.html file
+If you want to add a resume/ cover letter make sure to use a pdf format and add it to the image folder.
 # Dependencies
-None, this project uses only HTML and CSS
+None, this project uses only HTML, CSS, and Javascript
 # Acknowledgements
-#### My awesome teachers Josh and Christina
+
+#### My awesome teachers Josh and Christina- Wouldn't have been abel to do this without you guys!
 #### Fellow students Serjay P., Jermaine B., and Nimo
-#### Figma - https://www.figma.com/file/9pNDUrVRsqTv4wyFYCIVX9/MY-des?node-id=0%3A1&t=RBWMqSq91xhNI70n-1
-#### CSS Reset by MeyerWeb
-#### Icons8 LLC
-#### Stack overflow
+
+# Refer to ...
+ Figma Design- https://www.figma.com/file/9pNDUrVRsqTv4wyFYCIVX9/MY-des?node-id=0%3A1&t=RBWMqSq91xhNI70n-1
+ W3
+ Icons8 LLC
+ Stack overflow
 
 # Contact
 If you have any questions or issues, please feel free to contact me via email or social media links provided on the portfolio.
