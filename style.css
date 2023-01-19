@@ -159,24 +159,36 @@ margin-top: 20px;
     position: relative;
 }
 
- .tab-content ul li{
+ .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
  }
 
- .tab-content ul li{
+ .tab-contents ul li{
     color: #f87385;
     font-size: larger;
+
  }
 
- .tab-content ul li span{
+ .tab-contents ul li span{
     font-size: xx-large;
     color: white;
+    
+
  }
 
- .tab-content ul li p{
+ .tab-contents ul li p{
+ 
     font-size: large;
     color: rgb(244, 200, 200);
+ }
+
+ .tab-contents{
+    display: none;
+ }
+
+ .tab-contents.active-tab{
+    display: block;
  }
 
 .tab-links::after{
@@ -194,6 +206,7 @@ margin-top: 20px;
     width: 100%;
 
  }
+
 
 .portfolio{
     display: flex;
@@ -286,3 +299,90 @@ justify-content: center;
 .footer-icon{
     justify-content: space-between;
 }
+
+
+/* __________________ */
+
+.container{
+    width: 100%;
+    background-color: #ffd9b9;
+    color: black;
+}
+.contact-box{
+    display: flex;
+
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    border-top: 2px solid rgb(179, 139, 139);
+    border-right: 2px solid rgb(179, 139, 139);
+
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color:#ba987d;
+    border-top: 2px solid rgb(179, 139, 139);
+    border-right: 2px solid rgb(179, 139, 139);
+    
+}
+
+.contact-right img{
+    width: 100%;
+    height: 70vh;
+}
+.input-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row.input-group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #f87385;
+    background-color: white;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #f87385;
+}
+label{
+    margin-bottom: 10px;
+    display: block;  
+}
+button{
+    background-color: #f87385;
+    color: aliceblue;
+    width: 100px;
+    outline: none;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 10px 0 black;
+   
+}
+
+.contact-text{
+    background-color: #e7d5c7;
+    /* color: white; */
+    padding-top: 1.6rem;
+    padding-bottom: 3rem;
+    padding-left: 10%;
+   
+}
+

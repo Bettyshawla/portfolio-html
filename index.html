@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <script src="./script.js"></script>
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
-    ></script>
-    <link
+    ></script> -->
+    <!-- <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="./style.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    /> -->
   </head>
   <body>
     <header id="headerdiv" class="headerdiv">
@@ -74,24 +74,19 @@
               </p>
 
               <div class="tab">
-                <p
-                  class="tab-links"
-                
-                >
-                  Technical Skills
-                </p>
-                <p class="tab-links" >
-                  Personal Skill
-                </p>
-                <p class="tab-links" >Experience</p>
-                <p class="tab-links">Education</p>
+                <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills </p>
+                <p class="tab-links" onclick="opentab('personal')" >Personal Skill  </p>
+                <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
               </div>
 
               <!-- Technical Skills -->
-              <div class="tab-content active-tab" id="technicalSkills">
+              <div class="tab-contents active-tab" id="skills">
                 <ul>
                   <li>
-                    <span>Frontend Development</span> <br />
+                    <span>Frontend Development</span> 
+                    <br />
+                    <br />
                     <b>HTML5</b>
                     <p>Structuring contents and Canvas</p>
 
@@ -133,11 +128,12 @@
                   </li>
                 </ul>
               </div>
-              <div class="tab-content active-tab" id="personalSkills">
+              <div class="tab-contents active-tab" id="personal">
                 <!-- Personal Skill -->
                 <ul>
                   <li>
                     <span>Communication Skill</span>
+                    <br />
                     <br />
                     <b class="per-skill">Strong problem-solving skill</b>
                     <br />
@@ -150,7 +146,7 @@
                 </ul>
               </div>
               <!--  Experience  -->
-              <div class="tab-content active-tab" id="experience">
+              <div class="tab-contents active-tab" id="experience">
                 <ul>
                   <li>
                     <span>Internship Experience </span>
@@ -162,10 +158,17 @@
                 </ul>
               </div>
               <!-- EDUCATION -->
-              <div class="tab-content active-tab" id="education">
+              <div class="tab-contents active-tab" id="education">
                 <ul>
                   <li>
+
                     <span>Education</span>
+                    <br />
+                    <br />
+                    <b>Generation</b>
+                    <p>AWS cloud practitioner</p>
+                    <p>Feb 2023 - Apr 2023</p>
+
                     <br />
                     <b>Per Scholas</b>
                     <p>Software Engineering</p>
@@ -238,44 +241,57 @@
         </div>
       </div>
    
-
-      <section class="last-body">
-        <h1>Contact me</h1>
-        <div id="contact" class="contact-right">
-          <form class="input-mail">
-            <input
-              type="text"
-              name="Name"
-              placeholder="Add Your Name"
-              required
-            />
-            <br />
-            <input
-              type="email"
-              name="email"
-              placeholder="Add Your Email"
-              required
-            />
-            <br />
-            <textarea
-              name="Message"
-              id="msg"
-              rows="6"
-              placeholder="Your Message"
-            ></textarea>
-            <br />
-            <button type="submit">Send</button>
-          </form>
-          <div class="mail">
-            <img src="./image/gmail.jpeg" alt="gmail" />
+<div class="container">
+  <div class="contact-text">
+  <h1>Contact me</h1>
+</div>
+ 
+    <div class="contact-box">
+      <div class="contact-left">  
+         <h3>Send me a message</h3>
+         <form >
+          <div class="input-row">
+            <div class="input-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your name">
+            </div>
+            <div class="input-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="Your phone number">
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" placeholder="Your email">
+            </div>
+            <div class="input-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Your subject">
+            </div>
+          </div>
+
+          <label >Message</label>
+          <textarea rows="10" placeholder="Your Message"></textarea>
+          
+          
+          <button>Send</button>
+         </form>
+      </div>
+      <div class="contact-right">
+        <!-- <h3>Reach out to me</h3> -->
+        <img src="./image/gmail.jpeg" alt="">
+      </div>
+    </div>
+  
 
 
 
-    <div class="footer-div">
+</div>  
+
+
+    <footer class="footer-div">
       <div class="footer">
         <p>&copy; Bethelhem Shawla Portfolio, 2023</p>
  
@@ -297,6 +313,6 @@
         </a>
       </div>
 
-    </div>
+    </footer>
   </body>
 </html>
