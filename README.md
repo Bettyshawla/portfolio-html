@@ -2,6 +2,8 @@
 # Portfolio
 ![Screen Shot 2023-01-19 at 12 25 35 AM](https://user-images.githubusercontent.com/113690973/213362448-cdbb8e77-93e0-4c07-b703-e85aa7faf0d9.png)
 
+# live site
+https://bettyshawla.github.io/portfolio-html/
 This is a portfolio website is built using HTML and CSS. It showcases my past projects and experiences.
 
 # Features
