@@ -217,8 +217,19 @@ margin-top: 20px;
     padding-left: 5%;
     font-size: 40px;
     margin-bottom: 1rem;
-}
+    /* font-size: 40px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline; */
+ }
 
+
+/* #project h2{
+    padding-left: 5%;
+    font-size: 25px;
+    margin-bottom: 1rem;
+} */
 .card-text h3{
     color: #f87385;
     margin-bottom: 1rem;
@@ -229,14 +240,6 @@ margin-top: 20px;
     color: #f79aa7;
     margin-bottom: 0.5rem;
 }
-
-
-/* .contact-right{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3% 0% 10px 3%;
-} */
-
 
 
 /* ________________CONTACT PAGE______________ */
